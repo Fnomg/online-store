@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.nav__list {
+  width: 680px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #222222;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  text-transform: uppercase;
+}
