@@ -1,3 +1,40 @@
+.card:hover {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  .card__pict {
+    filter: brightness(50%);
+  }
+  .card__btn {
+    display: flex;
+  }
+}
+
+.card__img {
+  position: relative;
+}
+
+.card__btn {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 12px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card__btn-text {
+  margin-left: 8px;
+}
+
+.card__pict {
+  width: 100%;
+}
+
 .card__text {
   padding: 19px 14px;
 }
