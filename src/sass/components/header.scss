@@ -12,12 +12,14 @@
 }
 
 .header__trash {
-  margin-right: 26px;
+  margin-right: 16px;
   margin-left: auto;
+  padding: 10px;
 }
 
 .header__account-btn {
   background-color: #f16d7f;
+  border: 1px solid transparent;
   padding: 12px 19px;
   color: #ffffff;
   font-family: Lato;
@@ -27,4 +29,13 @@
   letter-spacing: 0.38px;
   line-height: 23px;
   text-align: right;
+  cursor: pointer;
+  display: block;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: #ffffff;
+    border: 1px solid #f16d7f;
+    color: #222222;
+  }
 }

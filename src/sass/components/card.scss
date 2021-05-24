@@ -25,6 +25,12 @@
   display: none;
   align-items: center;
   cursor: pointer;
+
+  &:focus {
+    transition: 0.5s;
+    background-color: #f16d7f;
+    border: 1px solid #000;
+  }
 }
 
 .card__btn-text {

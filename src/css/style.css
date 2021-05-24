@@ -25,11 +25,13 @@ a {
   margin-right: auto; }
 
 .header__trash {
-  margin-right: 26px;
-  margin-left: auto; }
+  margin-right: 16px;
+  margin-left: auto;
+  padding: 10px; }
 
 .header__account-btn {
   background-color: #f16d7f;
+  border: 1px solid transparent;
   padding: 12px 19px;
   color: #ffffff;
   font-family: Lato;
@@ -38,7 +40,14 @@ a {
   font-style: normal;
   letter-spacing: 0.38px;
   line-height: 23px;
-  text-align: right; }
+  text-align: right;
+  cursor: pointer;
+  display: block; }
+  .header__account-btn:hover {
+    transition: 0.5s;
+    background-color: #ffffff;
+    border: 1px solid #f16d7f;
+    color: #222222; }
 
 .search-form {
   display: flex;
@@ -111,7 +120,8 @@ a {
   letter-spacing: normal;
   line-height: 26px;
   text-align: left;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 20px 5px; }
 
 .promo {
   background-color: #e8e8e8;
@@ -205,7 +215,8 @@ a {
     line-height: normal; }
 
 .hot__item {
-  padding-top: 21px; }
+  padding-top: 21px;
+  cursor: pointer; }
 
 .hot__item:nth-child(1) {
   width: 560px;
@@ -310,6 +321,10 @@ a {
   display: none;
   align-items: center;
   cursor: pointer; }
+  .card__btn:focus {
+    transition: 0.5s;
+    background-color: #f16d7f;
+    border: 1px solid #000; }
 
 .card__btn-text {
   margin-left: 8px; }
@@ -362,7 +377,6 @@ a {
   padding-left: 39px; }
 
 .advantages__text {
-  /* Style for "30% OFFER" */
   width: 296px;
   color: #ffffff;
   font-family: Lato;
@@ -424,5 +438,18 @@ a {
   line-height: 24px;
   text-align: left;
   letter-spacing: 0.35px; }
+
+.feedback {
+  background-image: url("../img/feedback-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.feedback__wrapper {
+  padding-top: 111px;
+  padding-bottom: 156px; }
+
+.review {
+  display: flex;
+  flex-direction: row; }
 
 /*# sourceMappingURL=style.css.map */
