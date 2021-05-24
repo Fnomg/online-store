@@ -1,0 +1,96 @@
+.advantages__wrapper {
+  padding-top: 113px;
+  padding-bottom: 97px;
+}
+
+.advantages__wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.advantages__sale {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 67%;
+  height: 529px;
+  padding-top: 146px;
+  padding-left: 39px;
+}
+
+.advantages__text {
+  /* Style for "30% OFFER" */
+  width: 296px;
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 54px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 54px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+
+  &--color {
+    color: #f16d7f;
+  }
+
+  &--size {
+    font-size: 32px;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    line-height: 32px;
+  }
+}
+
+.advantages__content {
+  width: 33%;
+  background-color: #222224;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 43px 48px 36px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 47px;
+}
+
+.advantages__item-text {
+  margin-left: 33px;
+}
+
+.advantages__title {
+  color: #fbfbfb;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.advantages__subtitle {
+  margin-top: 17px;
+  width: 220px;
+  color: #fbfbfb;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.35px;
+}
