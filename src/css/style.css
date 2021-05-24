@@ -163,7 +163,8 @@ a {
     line-height: normal; }
 
 .hot__wrapper {
-  padding-top: 98px; }
+  padding-top: 98px;
+  padding-bottom: 100px; }
 
 .hot__list {
   display: flex;
