@@ -94,6 +94,8 @@ a {
   line-height: 14px;
   text-align: left;
   letter-spacing: 0.35px; }
+  .search-form__input:focus {
+    outline: none; }
 
 .search-form__btn {
   padding: 14px 11px;
