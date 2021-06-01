@@ -444,14 +444,216 @@ a {
 .feedback {
   background-image: url("../img/feedback-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: bottom; }
 
 .feedback__wrapper {
+  position: relative;
   padding-top: 111px;
-  padding-bottom: 156px; }
+  padding-bottom: 168px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .review {
   display: flex;
   flex-direction: row; }
+
+.review__button {
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent; }
+
+.review__button-link {
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6; }
+  .review__button-link--active {
+    background-color: #f16d7f; }
+
+.review__wrap {
+  width: 386px;
+  margin-left: 28px;
+  margin-top: 12px; }
+
+.review__text {
+  color: #222224;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px;
+  text-align: left;
+  letter-spacing: 0.4px; }
+
+.review__name {
+  margin-top: 19px;
+  display: flex;
+  flex-direction: column;
+  color: #222224;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  line-height: 14px; }
+  .review__name span {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+    color: #f16d7f; }
+
+.review__buttons {
+  margin-top: 31px; }
+
+.subscribe__title {
+  color: #222224;
+  font-family: Lato;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  line-height: 54px;
+  text-transform: uppercase; }
+
+.subscribe__subtitle {
+  font-style: normal;
+  letter-spacing: 0.35px;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center; }
+
+.subscribe__form {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.subscribe__input {
+  width: 282px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  border: none;
+  padding: 18px 20px;
+  outline: none;
+  background-color: #e1e1e1; }
+  .subscribe__input:hover, .subscribe__input:focus {
+    background-color: #cacaca; }
+
+.subscribe__button {
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  border: none;
+  padding: 18px 28px;
+  background-color: #f16d7f;
+  cursor: pointer;
+  border: 1px solid transparent; }
+  .subscribe__button:hover {
+    transition: 0.2s;
+    background-color: #ffffff;
+    border: 1px solid #f16d7f;
+    color: #222222; }
+
+.footer__base {
+  margin-top: 109px;
+  margin-bottom: 89px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 64px; }
+
+.footer__about {
+  width: 40%;
+  max-width: 427px; }
+
+.footer__text {
+  margin-top: 29px; }
+
+.footer__text-item {
+  margin-top: 34px; }
+
+.footer__nav {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.footer__nav-title {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.45px; }
+
+.footer__nav-list {
+  margin-top: 45px; }
+
+.footer__nav-item:not(:nth-of-type(1)) {
+  margin-top: 25px; }
+
+.footer__nav-item a {
+  color: #898989;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 0.4px;
+  width: 100%;
+  display: inline-block;
+  padding: 2px 0; }
+
+.social {
+  background-color: #e6e6e6; }
+
+.social__wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.social__links {
+  display: flex; }
+
+.social__item {
+  width: 32px;
+  height: 32px;
+  background-color: #fff; }
+  .social__item:hover {
+    transition: 0.5s;
+    background-color: #f16d7f; }
+    .social__item:hover .social__link {
+      color: #fff; }
+
+.social__item:not(:nth-of-type(1)) {
+  margin-left: 8px; }
+
+.social__link {
+  width: 100%;
+  height: 100%;
+  color: #b2b2b2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.social__copy {
+  color: #7a7a7a;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 42px;
+  text-align: right;
+  letter-spacing: 0.4px; }
 
 /*# sourceMappingURL=style.css.map */

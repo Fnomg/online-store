@@ -2,9 +2,14 @@
   background-image: url("../img/feedback-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 .feedback__wrapper {
+  position: relative;
   padding-top: 111px;
-  padding-bottom: 156px;
+  padding-bottom: 168px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
