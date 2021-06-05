@@ -1,0 +1,27 @@
+.offer__wrapper {
+  padding-top: 119px;
+  padding-bottom: 73px;
+}
+
+.offer__title {
+  color: #4d4d4d;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offer__list {
+  margin: 0 auto;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}

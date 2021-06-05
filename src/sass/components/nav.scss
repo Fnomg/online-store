@@ -8,6 +8,7 @@
   width: 680px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav__link {
@@ -17,8 +18,43 @@
   font-weight: 700;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 26px;
+  line-height: 50px;
   text-align: left;
   text-transform: uppercase;
-  padding: 20px 5px;
+  padding: 0 5px;
+  position: relative;
+
+  &:after {
+    display: none;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    z-index: 3;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ( 45deg );
+    background-color: #fff;
+  }
 }
+
+.nav__item {
+  &:hover {
+    .menu {
+      display: flex;
+    }
+    .nav__link:after{
+      display: block;
+    }
+  }
+}
+
+.nav__menu {
+  position: absolute;
+  top: 43px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
