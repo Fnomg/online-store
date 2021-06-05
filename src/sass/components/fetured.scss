@@ -44,6 +44,17 @@
   margin-top: 39px;
   background-color: #f16d7f;
   padding: 18px 25px;
+  border: 1px solid transparent;
+
+  &:hover {
+    transition: 0.3s;
+    background-color: #ffffff;
+    border: 1px solid #f16d7f;
+    p {
+      color: #222222;
+    }
+
+  }
 }
 
 .fetured__link p {

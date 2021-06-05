@@ -2,3 +2,66 @@
   display: flex;
   flex-direction: row;
 }
+
+.review__button {
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+
+}
+
+.review__button-link {
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6;
+
+
+  &--active {
+    background-color: #f16d7f;
+  }
+}
+
+.review__wrap {
+  width: 386px;
+  margin-left: 28px;
+  margin-top: 12px;
+}
+
+.review__text {
+  color: #222224;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 26px;
+  text-align: left;
+  letter-spacing: 0.4px;
+}
+
+.review__name {
+  margin-top: 19px;
+  display: flex;
+  flex-direction: column;
+  color: #222224;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  line-height: 14px;
+
+  span {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+    color: #f16d7f;
+  }
+}
+
+.review__buttons {
+  margin-top: 31px;
+}
