@@ -134,7 +134,7 @@ a {
     height: 10px;
     border-left: 1px solid #e6e6e6;
     border-top: 1px solid #e6e6e6;
-    z-index: 3;
+    z-index: 99;
     bottom: -16px;
     left: 50%;
     transform: translateX(-50%) rotateZ(45deg);
@@ -150,7 +150,8 @@ a {
   position: absolute;
   top: 43px;
   left: 50%;
-  transform: translate(-50%); }
+  transform: translate(-50%);
+  z-index: 99; }
 
 .promo {
   background-color: #e8e8e8;
@@ -395,9 +396,15 @@ a {
   text-align: left;
   text-transform: uppercase; }
 
+.advantages--products {
+  background-color: #222224; }
+
 .advantages__wrapper {
   padding-top: 113px;
   padding-bottom: 97px; }
+  .advantages__wrapper--products {
+    padding-top: 89px;
+    padding-bottom: 114px; }
 
 .advantages__wrap {
   display: flex;
@@ -435,6 +442,8 @@ a {
 .advantages__content {
   width: 33%;
   background-color: #222224; }
+  .advantages__content--products {
+    width: 100%; }
 
 .advantages__list {
   display: flex;
@@ -442,17 +451,29 @@ a {
   align-items: center;
   justify-content: center;
   padding: 48px 43px 48px 36px; }
+  .advantages__list--products {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center; }
 
 .advantages__item {
   display: flex;
   flex-direction: row;
   align-items: flex-start; }
-
-.advantages__item:not(:last-child) {
-  margin-bottom: 47px; }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 47px; }
+  .advantages__item--products {
+    flex-direction: column;
+    align-items: center;
+    width: 30%; }
+    .advantages__item--products:not(:last-child) {
+      margin-bottom: 0; }
 
 .advantages__item-text {
   margin-left: 33px; }
+  .advantages__item-text--products {
+    margin: 32px 0 0; }
 
 .advantages__title {
   color: #fbfbfb;
@@ -463,6 +484,8 @@ a {
   line-height: normal;
   text-align: left;
   letter-spacing: 0.5px; }
+  .advantages__title--products {
+    text-align: center; }
 
 .advantages__subtitle {
   margin-top: 17px;
@@ -475,6 +498,9 @@ a {
   line-height: 24px;
   text-align: left;
   letter-spacing: 0.35px; }
+  .advantages__subtitle--products {
+    text-align: center;
+    width: 100%; }
 
 .feedback {
   background-image: url("../img/feedback-bg.jpg");
@@ -980,5 +1006,112 @@ a {
 
 .form-add__svg {
   fill: #f16d7f; }
+
+.products__wrapper {
+  padding-top: 59px;
+  padding-bottom: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 2; }
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  gap: 30px; }
+
+.products__ware {
+  display: flex;
+  justify-content: flex-end; }
+
+.products__item {
+  width: 30%; }
+
+.products__footer {
+  margin-top: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.products__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #ef5b70;
+  background-color: #ffffff; }
+  .products__button p {
+    padding: 16px 45px;
+    color: #ef5b70;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left; }
+  .products__button:hover {
+    transition: 0.3s;
+    background-color: #f16d7f;
+    border: 1px solid #fff; }
+    .products__button:hover p {
+      color: #ffffff; }
+
+.option {
+  display: flex;
+  flex-direction: column; }
+
+.option__box {
+  display: none;
+  flex-direction: column;
+  margin-left: 22px; }
+
+.option__item {
+  width: 243px; }
+  .option__item:not(:nth-of-type(1)) {
+    margin-top: 18px; }
+  .option__item:hover .option__box {
+    display: flex; }
+  .option__item:hover .fa-caret-down {
+    color: #ef5b70; }
+
+.option__title {
+  color: #ef5b70;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 13px 11px;
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer; }
+
+.fa-caret-down {
+  color: #6f6e6e; }
+
+.fa-caret-up {
+  color: #ef5b70; }
+
+.option__link {
+  margin-top: 5px;
+  color: #6f6e6e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 33px;
+  text-align: left; }
+  .option__link:hover {
+    color: #ef5b70; }
 
 /*# sourceMappingURL=style.css.map */
