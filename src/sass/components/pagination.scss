@@ -9,7 +9,13 @@
   display: flex;
   flex-direction: row;
 }
-
+.pagination__item {
+  &--active {
+    .pagination__link {
+      color: #ef5b70;
+    }
+  }
+}
 .pagination__link {
   color: #c4c4c4;
   font-family: Lato;
@@ -21,9 +27,6 @@
   text-align: left;
   padding: 15px 7px;
   display: block;
-  &--active {
-    color: #ef5b70;
-  }
 
   &:hover {
     color: #424242;
