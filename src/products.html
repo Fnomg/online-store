@@ -323,7 +323,30 @@
       </ul>
     </div>
     <div class="products__wrap">
-      <div class="products__settings"></div>
+      <div class="products__settings settings">
+        <div class="settings__wrapper">
+          <div class="settings__filters">
+          </div>
+          <div class="settings__sort-wrap">
+            <div class="settings__sort">
+              <span class="settings__sort-title">Sort By</span>
+              <select class="settings__sort-select" name="" id="">
+                <option value="Name">Name</option>
+                <option value="Price">Price</option>
+              </select>
+            </div>
+            <div class="settings__sort">
+              <span class="settings__sort-title">Show</span>
+              <select class="settings__sort-select" name="" id="">
+                <option value="Name">9</option>
+                <option value="Price">50</option>
+                <option value="Price">100</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
       <div class="products__ware">
         <div class="products__list">
           <a href="single_page.html" class="products__item card">
@@ -500,7 +523,43 @@
         </div>
       </div>
       <div class="products__footer">
-        <div class="products__pagination"></div>
+        <div class="products__pagination pagination">
+          <div class="pagination__before">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </div>
+          <ul class="pagination__list">
+            <li class="pagination__item pagination__item--active">
+              <a href="#" class="pagination__link">1</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">4</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">5</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">6</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">7</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">8</a>
+            </li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link">9</a>
+            </li>
+          </ul>
+          <div class="pagination__after">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+        </div>
         <a href="#" class="products__button">
           <p>View All</p>
         </a>

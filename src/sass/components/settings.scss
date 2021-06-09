@@ -1,0 +1,35 @@
+.settings {
+  width: 100%;
+  background-color: #f3f3f3;
+  margin-top: 41px;
+  margin-bottom: 48px;
+}
+
+.settings__wrapper {
+  padding: 10px;
+}
+
+.settings__sort-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.settings__sort {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.settings__sort-title {
+  display: block;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  padding: 10px 13px;
+}
+
+.settings__sort-select {
+  outline: none;
+  padding: 11px 35px 11px 11px;
+  border: 1px solid #ebebeb;
+  border-left: none;
+}
