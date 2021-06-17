@@ -15,7 +15,7 @@
 <body>
 <header class="header">
   <div class="header__wrapper container">
-    <a class="header__logo" href="#">
+    <a class="header__logo" href="index.html">
       <img src="./img/logo.png" alt="#" width="165" height="51">
     </a>
     <div class="header__search search-form">
@@ -41,7 +41,7 @@
 <section class="promo">
   <nav class="promo__nav nav">
     <ul class="nav__list">
-      <li class="nav__item"><a href="#" class="nav__link">Home</a>
+      <li class="nav__item"><a href="products.html" class="nav__link">Home</a>
         <div class="nav__menu menu">
           <div class="menu__list">
             <h3 class="menu__title">Home</h3>
@@ -70,7 +70,7 @@
           </div>
         </div>
       </li>
-      <li class="nav__item"><a href="#" class="nav__link">Man</a>
+      <li class="nav__item"><a href="products.html" class="nav__link">Man</a>
         <div class="nav__menu nav__menu--left menu">
           <div class="menu__list">
             <h3 class="menu__title">Man</h3>
@@ -100,7 +100,7 @@
         </div>
       </li>
       <li class="nav__item">
-        <a href="#" class="nav__link">Women</a>
+        <a href="products.html" class="nav__link">Women</a>
         <div class="nav__menu nav__menu--left menu">
           <div class="menu__list">
             <h3 class="menu__title">Women</h3>
@@ -129,7 +129,7 @@
           </div>
         </div>
       </li>
-      <li class="nav__item"><a href="#" class="nav__link">Kids</a>
+      <li class="nav__item"><a href="products.html" class="nav__link">Kids</a>
         <div class="nav__menu nav__menu--left menu">
           <div class="menu__list">
             <h3 class="menu__title">Kids</h3>
@@ -158,7 +158,7 @@
           </div>
         </div>
       </li>
-      <li class="nav__item"><a href="#" class="nav__link">Accessories</a>
+      <li class="nav__item"><a href="products.html" class="nav__link">Accessories</a>
         <div class="nav__menu nav__menu--right menu">
           <div class="menu__list">
             <h3 class="menu__title">Accessories</h3>
@@ -187,7 +187,7 @@
           </div>
         </div>
       </li>
-      <li class="nav__item"><a href="#" class="nav__link">Featured</a>
+      <li class="nav__item"><a href="products.html" class="nav__link">Featured</a>
         <div class="nav__menu nav__menu--right menu">
           <div class="menu__list">
             <h3 class="menu__title">Featured</h3>
@@ -216,7 +216,7 @@
           </div>
         </div>
       </li>
-      <li class="nav__item"><a href="#" class="nav__link">Hot Deals</a>
+      <li class="nav__item"><a href="products.html" class="nav__link">Hot Deals</a>
         <div class="nav__menu nav__menu--right menu">
           <div class="menu__list">
             <h3 class="menu__title">Hot Deals</h3>
@@ -297,22 +297,35 @@
       </div>
       <div class="product__price">$561</div>
       <form class="product__choose form-add">
+      <fieldset class="form-add__fieldset">
         <label class="form-add__label" for="color">CHOOSE COLOR
-          <select name="color" id="color">
+          <select class="form-add__input" name="color" id="color">
             <option value="red">red</option>
             <option value="green">green</option>
           </select>
         </label>
         <label class="form-add__label" for="size">CHOOSE SIZE
-          <select name="size" id="size">
+          <select class="form-add__input" name="size" id="size">
             <option value="red">S</option>
             <option value="green">M</option>
             <option value="green">L</option>
           </select>
         </label>
         <label class="form-add__label" for="color">QUANTITY
-          <input type="number" placeholder="1">
+          <input class="form-add__input" type="number" placeholder="1" minlength="1">
         </label>
+      </fieldset>
+        <button type="button" class="form-add__btn">
+          <svg class="form-add__svg" xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 32 29">
+            <g>
+              <g>
+                <path
+                      d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"/>
+              </g>
+            </g>
+          </svg>
+          <p class="card__btn-text">Add to cart</p>
+        </button>
       </form>
     </div>
   </div>

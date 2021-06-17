@@ -32,7 +32,7 @@
     height: 10px;
     border-left: 1px solid #e6e6e6;
     border-top: 1px solid #e6e6e6;
-    z-index: 3;
+    z-index: 99;
     bottom: -16px;
     left: 50%;
     transform: translateX(-50%) rotateZ( 45deg );
@@ -56,5 +56,6 @@
   top: 43px;
   left: 50%;
   transform: translate(-50%);
+  z-index: 99;
 }
 

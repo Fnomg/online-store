@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+}
+
+.pagination__list {
+  display: flex;
+  flex-direction: row;
+}
+.pagination__item {
+  &--active {
+    .pagination__link {
+      color: #ef5b70;
+    }
+  }
+}
+.pagination__link {
+  color: #c4c4c4;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-align: left;
+  padding: 15px 7px;
+  display: block;
+
+  &:hover {
+    color: #424242;
+  }
+}
+
+.pagination__before,
+.pagination__after {
+  padding: 15px 7px 15px 15px;
+}
